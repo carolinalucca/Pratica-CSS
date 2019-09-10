@@ -1,183 +1,57 @@
-body {
-    background-color: #0C3A54;
-    position: relative;
-    font-family: 'Letter Gothic Std', sans-serif
-}
+body { background-color: #0C3A54; position: relative; font-family: 'Letter Gothic Std', sans-serif; }
+span, p, li { text-transform: uppercase; }
 
-.sidebar-content {
-    position: absolute;
-    width: 25%;
-}
+/* SIDEBAR */
+.sidebar-content { position: absolute; width: 25%; }
 
-.white-box {
-    background-color: #FFF;
-    width: 70%;
-    height: 100%;
-    position: absolute;
-    left: 25%;
-    min-height: 740px;
-}
+.foto { min-height: 250px; display: flex; align-items: center; justify-content: center; }
+.circle { background-color: #FFF; border-radius: 50%; width: 200px; height: 200px; overflow: hidden; position: relative; }
+.circle img { position: absolute; bottom: 0; width: 100%; }
 
-.circle {
-    background-color: #FFF;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
+.contatos { color: #FFF; }
+.contatos-titulo { background-color: #FF4048; font-size: 30px; padding-left: 13%; }
+.contatos-content { font-size: 15px; }
 
-.circle img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+.idiomas { color: #FFF; }
+.idiomas-titulo { background-color: #B3DC04; font-size: 30px; padding-left: 13%; }
 
-span {
-    text-transform: uppercase;
-}
+.habilidades { color: #FFF; }
+.habilidades-titulo { background-color: #86D5FE; font-size: 30px; padding-left: 13%; }
 
-p {
-    text-transform: uppercase;
-}
-.contatos {
-    color: #FFF;
-}
+.hobbies-content { display: flex; justify-content: center; padding-top: 10px;}
+.hobbies { color: #FFF; }
+.hobbies-titulo { background-color: #FB9612; font-size: 30px; padding-left: 13%; }
 
-.contatos-titulo {
-    background-color: #FF4048;
-    font-size: 30px;
-    padding-left: 13%;
-}
+.icon { width: 25px; height: 25px; }
+.div-icon { display: inline-block; width: 15%; }
+.div-content { display: inline-block; width: 80%; }
 
-.contatos-content {
-    font-size: 15px;
-}
+/* WHITE BOX */
+.white-box { background-color: #FFF; width: 70%; height: 100%; position: absolute; left: 25%; height: auto; }
 
-.idiomas {
-    color: #FFF;
-}
+.icon-2 { width: 30px; height: 30px; float: right; }
+.centralizado { text-align: center; vertical-align: middle; padding: 10px 0; }
+.pd-10 { vertical-align: middle; padding: 10px 0; }
+.content { width: 70%; }
+.content div { margin-left: 50px; }
 
-.idiomas-titulo {
-    background-color: #B3DC04;
-    font-size: 30px;
-    padding-left: 13%;
-}
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
 
-.habilidades {
-    color: #FFF;
-}
-.habilidades-titulo {
-    background-color: #86D5FE;
-    font-size: 30px;
-    padding-left: 13%;
-}
+.bold { font-weight: bold; }
 
-.hobbies {
-    color: #FFF;
-}
+.nome-content { min-height: 150px; border-right: 10px solid #FF4048; display: flow-root; padding-top: 35px; }
+.nome { text-transform: uppercase; text-align: center; }
+.sobre { text-align: center; }
+.seta-1{ border-right: 20px solid #FF4048; border-top: 20px solid transparent; border-bottom: 20px solid transparent; float: right; position: relative; top: 85px; }
 
-.hobbies-titulo {
-    background-color: #FB9612;
-    font-size: 30px;
-    padding-left: 13%;
-}
+.titulo { font-weight: bold; font-size: 30px; margin-left: 30px; }
 
-.icon {
-    width: 25px;
-    height: 25px;
-}
+.educacao-content { min-height: 185px; border-right: 10px solid #B3DC04; display: flow-root; }
+.seta-2{ border-right: 20px solid #B3DC04; border-top: 20px solid transparent; border-bottom: 20px solid transparent; float: right; position: relative; top: 120px; }
 
-.div-icon {
-    display: inline-block;
-    width: 15%;
-}
+.experiencia-content { min-height: 185px; border-right: 10px solid #86D5FE; display: flow-root; }
+.seta-3{ border-right: 20px solid #86D5FE; border-top: 20px solid transparent; border-bottom: 20px solid transparent; float: right; position: relative; top: 120px; }
 
-.div-content {
-    display: inline-block;
-    width: 80%;
-}
-
-.centralizado {
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px 0;
-}
-
-.pd-10 {
-    vertical-align: middle;
-    padding: 10px 0;
-}
-
-.nome-content {
-    min-height: 150px;
-    border-right: 10px solid #FF4048;
-    display: flow-root;
-    padding-top: 35px;
-}
-
-.nome {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.sobre {
-    text-align: center;
-}
-
-.titulo {
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 30px;
-}
-
-.educacao-content {
-    min-height: 185px;
-    border-right: 10px solid #B3DC04;
-}
-
-.experiencia-content {
-    min-height: 185px;
-    border-right: 10px solid #86D5FE;
-}
-
-.cursos-content {
-    min-height: 185px;
-    border-right: 10px solid #FB9612;
-}
-
-.seta-1{ 
-    border-right: 20px solid #FF4048;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    float: right;
-    position: relative;
-    top: 85px;
-}
-
-.seta-2{ 
-    border-right: 20px solid #B3DC04;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    float: right;
-    position: relative;
-    top: 120px;
-}
-
-.seta-3{ 
-    border-right: 20px solid #86D5FE;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    float: right;
-    position: relative;
-    top: 120px;
-}
-
-.seta-4{ 
-    border-right: 20px solid #FB9612;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    float: right;
-    position: relative;
-    top: 120px;
-}
+.cursos-content { min-height: 185px; border-right: 10px solid #FB9612; display: flow-root; }
+.seta-4{ border-right: 20px solid #FB9612; border-top: 20px solid transparent; border-bottom: 20px solid transparent; float: right; position: relative; top: 120px; }
